@@ -1,0 +1,153 @@
+﻿/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+    header .container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+            header nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.1rem;
+            }
+
+/* Hero Section (Carousel) */
+.hero {
+    background-color: #eee;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+/* Featured Books Section */
+.featured {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+    .featured h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2rem;
+    }
+
+.books-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.book-card {
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .book-card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .book-card h3 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    .book-card p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .book-card button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+        .book-card button:hover {
+            background-color: #555;
+        }
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+    footer p {
+        font-size: 1rem;
+    }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .books-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+}
